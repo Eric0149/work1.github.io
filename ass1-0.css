@@ -1,76 +1,153 @@
-@font-face {
-    font-family: Lexend deca;
-    src: url('https://fonts.google.com/specimen/Lexend+Deca#about');
-}
-*{
-    align-content: stretch;
-    flex-direction: column;
-    padding: 10px;
-    font-size: 15px;
-    flex-wrap: nowrap;
-    font-weight: 400;
-    font-family: lexend deca;
-}
-p{
-    color: hsla(0, 0%, 100%, 0.75);
-}
-h2{
-    color: hsl(0, 0%, 95%);
-}
-.main{
-    display: flex;
-    flex-direction: row;
-}
-.first{
-    background-color: hsl(31, 77%, 52%);
-}   
-.first a{
-    padding-bottom: 10px;
-    background-color: hsl(0, 0%, 95%);
-    border-radius: 25px;
-    text-decoration: none;
-    color: hsl(31, 77%, 52%);
-}
-.first a:hover{
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: hsl(31, 77%, 52%);
-    color: hsla(0, 0%, 100%, 0.75);
-    border:1px double hsla(0, 0%, 100%);
-}
-.second{
-    background-color: hsl(184, 100%, 22%);
-}
-.second a{
-    padding-bottom: 10px;
-    background-color: hsl(0, 0%, 95%);
-    border-radius: 25px;
-    text-decoration: none;
-    color: hsl(184, 100%, 22%);
-}
-.second a:hover{
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: hsl(184, 100%, 22%);
-    color: hsla(0, 0%, 100%, 0.75);
-    border:1px double hsla(0, 0%, 100%);
-}
-.third{
-    background-color: hsl(179, 100%, 13%);
-}
-.third a{
-    padding-bottom: 10px;
-    background-color: hsl(0, 0%, 95%);
-    border-radius: 25px;
-    text-decoration: none;
-    color: hsl(179, 100%, 13%);
-}
-.third a:hover{
-    padding: 5px;
-    margin-bottom: 5px;
-    background-color: hsl(179, 100%, 13%);
-    color: hsla(0, 0%, 100%, 0.75);
-    border:1px double hsla(0, 0%, 100%);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/*phones*/
+
+@media screen and (max-width: 375px){
+    *{
+        flex-direction: row;
+        padding: 10px;
+        font-size: 15px;
+        flex-wrap: nowrap;
+        font-weight: 400;
+        font-family: 'lexend Deca', sans-serif;
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    h2{
+        color: hsl(0, 0%, 95%);
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15vh;
+        justify-content: center;
+    }
+    .first{
+        background-color: hsl(31, 77%, 52%);
+    }   
+    .first a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(31, 77%, 52%);
+    }
+    .first a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(31, 77%, 52%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
+    .second{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .second a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(184, 100%, 22%);
+    }
+    .second a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(184, 100%, 22%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
+    .third{
+        background-color: hsl(179, 100%, 13%);
+    }
+    .third a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(179, 100%, 13%);
+    }
+    .third a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(179, 100%, 13%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
 }
 
+/*large screens*/
 
+@media screen and (min-width: 376px) and (max-width:1440px){
+    *{
+        flex-direction: column;
+        padding: 10px;
+        font-size: 15px;
+        flex-wrap: nowrap;
+        font-weight: 400;
+        font-family: 'lexend Deca', sans-serif;
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    h2{
+        color: hsl(0, 0%, 95%);
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 15vh;
+        justify-content: center;
+    }
+    .first{
+        background-color: hsl(31, 77%, 52%);
+    }   
+    .first a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(31, 77%, 52%);
+    }
+    .first a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(31, 77%, 52%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
+    .second{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .second a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(184, 100%, 22%);
+    }
+    .second a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(184, 100%, 22%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
+    .third{
+        background-color: hsl(179, 100%, 13%);
+    }
+    .third a{
+        padding-bottom: 10px;
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 25px;
+        text-decoration: none;
+        color: hsl(179, 100%, 13%);
+    }
+    .third a:hover{
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: hsl(179, 100%, 13%);
+        color: hsla(0, 0%, 100%, 0.75);
+        border:1px double hsla(0, 0%, 100%);
+    }
+}
